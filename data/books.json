@@ -1,0 +1,140 @@
+[
+  {
+    "id": "1",
+    "title": "The Great Gatsby",
+    "author": "F. Scott Fitzgerald",
+    "price": 12.99,
+    "genre": "Classic Literature",
+    "description": "Set in the summer of 1922, The Great Gatsby follows Nick Carraway as he moves to West Egg and becomes neighbors with the mysterious Jay Gatsby. A masterpiece of American literature exploring themes of wealth, love, and the American Dream.",
+    "image": "https://images.pexels.com/photos/159866/books-book-pages-read-literature-159866.jpeg",
+    "rating": 4.5,
+    "reviews": [
+      {
+        "id": "1",
+        "user": "BookLover23",
+        "rating": 5,
+        "comment": "A timeless classic that never gets old. Fitzgerald's prose is absolutely beautiful."
+      },
+      {
+        "id": "2",
+        "user": "LiteratureStudent",
+        "rating": 4,
+        "comment": "Great exploration of the American Dream. Required reading for everyone."
+      }
+    ],
+    "stock": 25,
+    "isbn": "978-0-7432-7356-5",
+    "publishedDate": "1925-04-10",
+    "pageCount": 180
+  },
+  {
+    "id": "2",
+    "title": "To Kill a Mockingbird",
+    "author": "Harper Lee",
+    "price": 14.99,
+    "genre": "Classic Literature",
+    "description": "A gripping, heart-wrenching, and wholly remarkable tale of coming-of-age in a South poisoned by virulent prejudice. Through the eyes of Scout Finch, we see the injustices of the adult world.",
+    "image": "https://images.pexels.com/photos/256541/pexels-photo-256541.jpeg",
+    "rating": 4.8,
+    "reviews": [
+      {
+        "id": "3",
+        "user": "ClassicReader",
+        "rating": 5,
+        "comment": "One of the most important books ever written. Powerful and moving."
+      }
+    ],
+    "stock": 30,
+    "isbn": "978-0-06-112008-4",
+    "publishedDate": "1960-07-11",
+    "pageCount": 324
+  },
+  {
+    "id": "3",
+    "title": "1984",
+    "author": "George Orwell",
+    "price": 13.99,
+    "genre": "Dystopian Fiction",
+    "description": "A dystopian social science fiction novel that follows Winston Smith, a member of the Outer Party who lives in Airstrip One, formerly Great Britain. A chilling prophecy about the future.",
+    "image": "https://images.pexels.com/photos/1029141/pexels-photo-1029141.jpeg",
+    "rating": 4.7,
+    "reviews": [
+      {
+        "id": "4",
+        "user": "SciFiEnthusiast",
+        "rating": 5,
+        "comment": "Terrifyingly relevant even today. Orwell was a visionary."
+      }
+    ],
+    "stock": 20,
+    "isbn": "978-0-452-28423-4",
+    "publishedDate": "1949-06-08",
+    "pageCount": 328
+  },
+  {
+    "id": "4",
+    "title": "Pride and Prejudice",
+    "author": "Jane Austen",
+    "price": 11.99,
+    "genre": "Romance",
+    "description": "The story follows Elizabeth Bennet and her complex relationship with the proud Darcy. A witty, romantic novel that explores themes of love, reputation, and class in Georgian England.",
+    "image": "https://images.pexels.com/photos/1509534/pexels-photo-1509534.jpeg",
+    "rating": 4.6,
+    "reviews": [
+      {
+        "id": "5",
+        "user": "RomanceReader",
+        "rating": 5,
+        "comment": "The perfect romance novel. Austen's wit is unmatched."
+      }
+    ],
+    "stock": 35,
+    "isbn": "978-0-14-143951-8",
+    "publishedDate": "1813-01-28",
+    "pageCount": 432
+  },
+  {
+    "id": "5",
+    "title": "The Catcher in the Rye",
+    "author": "J.D. Salinger",
+    "price": 15.99,
+    "genre": "Coming-of-age Fiction",
+    "description": "The story of Holden Caulfield, a teenager who has been expelled from prep school and is wandering around New York City. A controversial and influential coming-of-age story.",
+    "image": "https://images.pexels.com/photos/1370298/pexels-photo-1370298.jpeg",
+    "rating": 4.2,
+    "reviews": [
+      {
+        "id": "6",
+        "user": "TeenReader",
+        "rating": 4,
+        "comment": "Holden's voice is so authentic. Really captures teenage angst."
+      }
+    ],
+    "stock": 18,
+    "isbn": "978-0-316-76948-0",
+    "publishedDate": "1951-07-16",
+    "pageCount": 277
+  },
+  {
+    "id": "6",
+    "title": "Dune",
+    "author": "Frank Herbert",
+    "price": 16.99,
+    "genre": "Science Fiction",
+    "description": "Set in the distant future amidst a feudal interstellar society, Dune tells the story of young Paul Atreides. An epic science fiction novel that won both the Hugo and Nebula awards.",
+    "image": "https://images.pexels.com/photos/2908175/pexels-photo-2908175.jpeg",
+    "rating": 4.9,
+    "reviews": [
+      {
+        "id": "7",
+        "user": "SciFiMaster",
+        "rating": 5,
+        "comment": "The greatest science fiction novel ever written. Herbert created an entire universe."
+      }
+    ],
+    "stock": 22,
+    "isbn": "978-0-441-17271-9",
+    "publishedDate": "1965-08-01",
+    "pageCount": 688
+  }
+]
