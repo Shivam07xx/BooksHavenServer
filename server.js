@@ -2,6 +2,7 @@ const express = require('express');
 const cors = require('cors');
 const cookieParser = require('cookie-parser');
 const path = require('path');
+const axios = require('axios');
 
 const authRoutes = require('./routes/auth');
 const bookRoutes = require('./routes/books');
@@ -47,5 +48,17 @@ app.use('/api/*', (req, res) => {
 app.listen(PORT, '0.0.0.0', () => {
   console.log(`BookHaven server running on http://0.0.0.0:${PORT}`);
 });
+
+// --- Self keep-alive ping every 14 minutes ---
+if (process.env.RENDER_EXTERNAL_URL) {
+  setInterval(async () => {
+    try {
+      await axios.get(`${process.env.RENDER_EXTERNAL_URL}/api/health`);
+      console.log('Self-ping successful');
+    } catch (err) {
+      console.error('Self-ping failed:', err.message);
+    }
+  }, 14 * 60 * 1000); // 14 minutes
+}
 
 module.exports = app;
