@@ -9,14 +9,12 @@ const orderRoutes = require('./routes/orders');
 const adminRoutes = require('./routes/admin');
 
 const app = express();
-const PORT = process.env.PORT || 3001;
+const PORT = process.env.PORT || 10000; // Render sets PORT automatically
 
-// Middleware
+// Allow all origins (open CORS)
 app.use(cors({
-  origin: process.env.NODE_ENV === 'production' 
-    ? ['https://your-domain.vercel.app'] 
-    : ['http://localhost:5173', 'http://localhost:3000'],
-  credentials: true
+  origin: '*',
+  credentials: true,
 }));
 
 app.use(express.json({ limit: '10mb' }));
@@ -45,10 +43,9 @@ app.use('/api/*', (req, res) => {
   res.status(404).json({ message: 'API endpoint not found' });
 });
 
-if (process.env.NODE_ENV !== 'production') {
-  app.listen(PORT, () => {
-    console.log(`BookHaven server running on port ${PORT}`);
-  });
-}
+// Always listen on 0.0.0.0 for Render
+app.listen(PORT, '0.0.0.0', () => {
+  console.log(`BookHaven server running on http://0.0.0.0:${PORT}`);
+});
 
 module.exports = app;
