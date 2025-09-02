@@ -1,0 +1,13 @@
+{
+  "name": "my-node-server",
+  "version": "1.0.0",
+  "description": "A simple Node.js server deployed on Render",
+  "main": "serverjs",
+  "type": "module",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.19.2"
+  }
+}
